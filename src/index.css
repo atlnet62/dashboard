@@ -1,13 +1,239 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+    font-size: 62.5%;
 }
+
+body {
+    background: #202020;
+    background: url("./assets/bcg/bg06.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    color: azure;
+    font-family: "Lora";
+    font-size: 1.6rem;
+}
+
+#root {
+    position: relative;
+}
+
+.clock {
+    top: 0rem;
+    left: 0rem;
+    width: 50rem;
+    text-align: center;
+    position: fixed;
+}
+
+.date,
+.week {
+    font-size: 4.4rem;
+}
+
+.time {
+    font-size: 20rem;
+}
+
+.sport {
+    background-color: #202020ba;
+    top: 1rem;
+    right: 1rem;
+    width: 40rem;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+}
+
+.sport > img {
+    height: 10rem;
+    float: right;
+}
+
+.sport p {
+    margin: 0.5rem 0;
+}
+
+.sport p {
+    font-size: 2.5rem;
+}
+
+.clear {
+    clear: both;
+}
+
+.network {
+    background-color: #202020ba;
+    width: 40rem;
+    padding: 1rem;
+    font-size: 2.5rem;
+    bottom: 1rem;
+    right: 1rem;
+    position: fixed;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    text-align: left;
+    border-bottom: 0.1rem solid azure;
+    text-transform: uppercase;
+}
+
+td:first-child {
+    text-transform: uppercase;
+}
+
+td:nth-child(2) {
+    font-weight: bold;
+}
+
+td:nth-child(2),
+th:nth-child(2) {
+    text-align: right;
+}
+
+tfoot,
+.mfoot {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #808080;
+}
+
+tfoot tr td,
+.mfoot {
+    padding: 1rem 0 0.1rem;
+}
+
+.weather {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #202020ba;
+    width: 50rem;
+    padding: 1rem;
+    font-size: 2rem;
+    bottom: 1rem;
+    left: 1rem;
+    position: fixed;
+}
+
+.interior,
+.exterior {
+    width: 50%;
+    margin: 2rem 0 0;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 0.1rem solid azure;
+}
+
+.interior svg:first-child {
+    width: 100%;
+    font-size: 10rem;
+}
+
+.exterior img:first-child {
+    width: auto;
+    height: 10rem;
+    margin: 0 25% 0 25%;
+    font-size: 10rem;
+}
+
+.interior p:nth-child(3),
+.exterior p:nth-child(3) {
+    width: 75%;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.interior svg:nth-child(2),
+.exterior svg:nth-child(2) {
+    width: 25%;
+    font-size: 5rem;
+}
+
+.interior svg:nth-child(4),
+.exterior svg:nth-child(4) {
+    font-size: 3.5rem;
+    width: 25%;
+}
+
+.interior p:nth-child(5),
+.exterior p:nth-child(5) {
+    font-size: 5rem;
+    width: 75%;
+}
+
+.mfoot {
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.class-zero {
+    color: #f0ffff;
+}
+
+.class-one {
+    color: #ff0000;
+}
+
+.class-two {
+    color: #ffa500;
+}
+
+.class-three {
+    color: #ffff00;
+}
+
+.class-four {
+    color: #00ff00;
+}
+
+.class-five {
+    color: #78fcee;
+}
+
+.class-six {
+    color: #63a0fd;
+}
+
+.class-seven {
+    color: #0000ff;
+}
+
+.drapeau {
+    width: 50rem;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    top: 38rem;
+    left: 1rem;
+    position: fixed;
+}
+
+.drapeau img {
+    width: 20%;
+    height: auto;
+}
+
+.drapeau p {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
