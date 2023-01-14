@@ -2,11 +2,9 @@ import Calendar from "./Components/UI/Elements/Calendar/Index";
 import Sport from "./Components/UI/Elements/Sport/Index";
 import Network from "./Components/UI/Elements/Network/Index";
 import Weather from "./Components/UI/Elements/Weather/Index";
-import Flag from "./Components/UI/Elements/Drapeau/Index";
+import Flag from "./Components/UI/Elements/Flag/Index";
 
 function App() {
-
-
     return (
         <main>
             <Calendar />
