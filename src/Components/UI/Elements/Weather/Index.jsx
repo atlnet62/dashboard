@@ -3,7 +3,7 @@ import { getNetatmoInfo, getOpenWeather } from "../../../../services/weather/API
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown, faCaretRight, faCaretUp, faDroplet, faHouseChimney } from "@fortawesome/free-solid-svg-icons";
 
-function Index() {
+function Weather() {
     const [netAtmoInfo, setNetatmoInfo] = useState();
     const [openWeather, setOpenWeather] = useState();
     const [message, setMessage] = useState(null);
@@ -172,4 +172,4 @@ function Index() {
     );
 }
 
-export default Index;
+export default Weather;

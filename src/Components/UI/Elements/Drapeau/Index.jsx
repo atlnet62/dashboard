@@ -1,13 +1,12 @@
-import France from "../../../../assets/drapeau/france.svg";
+import pictureFlag from "../../../../assets/drapeau/france.svg";
 
-function Drapeau() {
-
+function Flag() {
     return (
         <section className="drapeau">
-            <img src={France} alt="France" />
+            <img src={pictureFlag} alt="France" />
             <p>France</p>
         </section>
     );
 }
 
-export default Drapeau;
+export default Flag;

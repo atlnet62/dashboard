@@ -1,13 +1,30 @@
-function Sport(props) {
+import { useEffect, useState } from "react";
+import logoFrance from "../../../../assets/teams/fff.png";
+import logoLens from "../../../../assets/teams/lens.png";
+
+function Sport() {
+    const [team, setTeam] = useState(null);
+
+    useEffect(() => {
+        let sport = "lens";
+        const teams = () => {
+            if (sport === "france") {
+                setTeam(logoFrance);
+            }
+            if (sport === "lens") {
+                setTeam(logoLens);
+            }
+        };
+        teams();
+    }, []);
+
     return (
         <section className="sport">
-            <img src={props.logo} alt="logo" />
-            <p>14/12/2022 - Terminé</p>
-            <p>FRANCE - MAROC</p>
-            <p>2 - 0</p>
-
+            <img src={team} alt="logo" />
+            <p>VICTOIRE</p>
+            <p>LENSOISE</p>
+            <aside className="mfoot">updated 01/01/2023 23:15:00</aside>
             <div className="clear"></div>
-            <aside className="mfoot">updated 12/12/2022 18:00:00</aside>
         </section>
     );
 }
