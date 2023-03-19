@@ -58,15 +58,15 @@ function Weather() {
                             ? "class-six"
                             : netAtmoInfo[0].Temperature >= 18 && netAtmoInfo[0].Temperature < 19
                             ? "class-five"
-                            : netAtmoInfo[0].Temperature >= 19 && netAtmoInfo[0].Temperature < 20
+                            : netAtmoInfo[0].Temperature >= 19 && netAtmoInfo[0].Temperature < 21
                             ? "class-four"
-                            : netAtmoInfo[0].Temperature >= 20 && netAtmoInfo[0].Temperature < 21
+                            : netAtmoInfo[0].Temperature >= 21 && netAtmoInfo[0].Temperature < 23
                             ? "class-three"
-                            : netAtmoInfo[0].Temperature >= 21 && netAtmoInfo[0].Temperature < 11
+                            : netAtmoInfo[0].Temperature >= 23 && netAtmoInfo[0].Temperature < 24
                             ? "class-two"
-                            : netAtmoInfo[0].Temperature >= 22
+                            : netAtmoInfo[0].Temperature >= 24
                             ? "class-one"
-                            : "class-four"
+                            : "class-zero"
                     }
                     icon={faHouseChimney}
                 />
@@ -87,13 +87,13 @@ function Weather() {
                             ? "class-six"
                             : netAtmoInfo[0].Temperature >= 18 && netAtmoInfo[0].Temperature < 19
                             ? "class-five"
-                            : netAtmoInfo[0].Temperature >= 19 && netAtmoInfo[0].Temperature < 20
+                            : netAtmoInfo[0].Temperature >= 19 && netAtmoInfo[0].Temperature < 21
                             ? "class-four"
-                            : netAtmoInfo[0].Temperature >= 20 && netAtmoInfo[0].Temperature < 21
+                            : netAtmoInfo[0].Temperature >= 21 && netAtmoInfo[0].Temperature < 23
                             ? "class-three"
-                            : netAtmoInfo[0].Temperature >= 21 && netAtmoInfo[0].Temperature < 11
+                            : netAtmoInfo[0].Temperature >= 23 && netAtmoInfo[0].Temperature < 24
                             ? "class-two"
-                            : netAtmoInfo[0].Temperature >= 22
+                            : netAtmoInfo[0].Temperature >= 24
                             ? "class-one"
                             : "class-zero"
                     }>
