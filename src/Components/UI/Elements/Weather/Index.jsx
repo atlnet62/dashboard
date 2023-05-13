@@ -134,13 +134,13 @@ function Weather() {
                             ? "class-six"
                             : netAtmoInfo[1].Temperature >= 18 && netAtmoInfo[1].Temperature < 19
                             ? "class-five"
-                            : netAtmoInfo[1].Temperature >= 19 && netAtmoInfo[1].Temperature < 20
+                            : netAtmoInfo[1].Temperature >= 19 && netAtmoInfo[1].Temperature < 21
                             ? "class-four"
-                            : netAtmoInfo[1].Temperature >= 20 && netAtmoInfo[1].Temperature < 21
+                            : netAtmoInfo[1].Temperature >= 21 && netAtmoInfo[1].Temperature < 23
                             ? "class-three"
-                            : netAtmoInfo[1].Temperature >= 21 && netAtmoInfo[1].Temperature < 22
+                            : netAtmoInfo[1].Temperature >= 23 && netAtmoInfo[1].Temperature < 24
                             ? "class-two"
-                            : netAtmoInfo[1].Temperature >= 22
+                            : netAtmoInfo[1].Temperature >= 24
                             ? "class-one"
                             : "class-zero"
                     }>
